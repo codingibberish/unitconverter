@@ -1,6 +1,4 @@
-let number = 10
 
-document.getElementById("mainNumber").textContent = number
 
 let meters = 0
 let feet = 0
@@ -11,6 +9,11 @@ let pounds = 0
 
 
 function convert() {
+
+    let number = document.getElementById("mainNumber").value;
+
+    document.getElementById("mainNumber").textContent = number
+
     feet = number * 3.28084
     meters = number / 3.28084
     gallons = number * 0.2199692
